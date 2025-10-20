@@ -467,10 +467,10 @@ prota = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-tiles.placeOnRandomTile(prota, assets.tile`transparency16`)
+tiles.placeOnRandomTile(prota, sprites.dungeon.collectibleInsignia)
 scene.cameraFollowSprite(prota)
 controller.moveSprite(prota)
-for (let valor2 of tiles.getTilesByType(assets.tile`transparency16`)) {
+for (let valor2 of tiles.getTilesByType(sprites.dungeon.floorLight5)) {
     compa = sprites.create(img`
         . . . . . . . . f f f f f . . . 
         . . . . . . . f f f e e e f . . 
@@ -487,7 +487,7 @@ for (let valor2 of tiles.getTilesByType(assets.tile`transparency16`)) {
         `, SpriteKind.NPC)
     tiles.placeOnTile(compa, valor2)
 }
-for (let valor3 of tiles.getTilesByType(assets.tile`transparency16`)) {
+for (let valor3 of tiles.getTilesByType(sprites.dungeon.floorLight2)) {
     fantasma = sprites.create(img`
         ........................
         ........................
